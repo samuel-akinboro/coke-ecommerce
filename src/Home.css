@@ -1,0 +1,93 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+}
+
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.home__image {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -150px;
+  /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
+}
+
+.home .add-to-cart{
+  position: fixed;
+  height: calc(100vh - 50px);
+  width: 370px;
+  background-color: white;
+  right: 0;
+  padding: 1.5em 1.5em 4em;
+  z-index: 100;
+  overflow-y: scroll !important;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+}
+
+.home .add-to-cart .MuiSvgIcon-root{
+  cursor: pointer;
+}
+
+.home .add-to-cart .quantity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.home .add-to-cart > span{
+  font-weight: 600;
+  margin: 1em auto;
+  display: block;
+  
+}
+
+.home .add-to-cart .quantity span{
+  font-weight: 600;
+}
+
+.home .add-to-cart .quantity input{
+  width: 100px;
+  padding: 5px;
+}
+
+.home .add-to-cart button{
+  width: 100%;
+  display: block;
+  padding: 1em 0;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(218, 22, 22);
+  color: white;
+  margin-top: 10px;
+}
+
+.home .add-to-cart img{
+  width: 30%;
+  object-fit: contain;
+  margin: 1em auto;
+}
+
+.home .add-to-cart h3{
+  margin: 1em 0;
+}
+
+.modal-success{
+  position: fixed;
+  background-color: rgb(12, 146, 12);
+  color: white;
+  padding: 15px 44px;
+  top: 120px;
+  border-radius: 8px;
+  z-index: 100;
+}
